@@ -1,0 +1,2 @@
+gcloud compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=0
+gcloud compute tpus tpu-vm ssh tpu-v3-8 --zone europe-west4-a --worker=0
