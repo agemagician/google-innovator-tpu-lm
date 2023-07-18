@@ -4,3 +4,4 @@ gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all 
 gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='sudo apt-get update'
 gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='sudo apt-get install git-lfs'
 gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='git lfs install'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='pip install "jax[tpu]==0.4.10" -f https://storage.googleapis.com/jax-releases/libtpu_releases.html'
