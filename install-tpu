@@ -1,0 +1,6 @@
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='git clone https://github.com/huggingface/transformers.git; cd transformers; pip3 install -e ".[flax]"'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='pip3 install datasets'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='pip3 install --upgrade huggingface_hub'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='sudo apt-get update'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='sudo apt-get install git-lfs'
+gcloud alpha compute tpus tpu-vm ssh tpu-v4-8 --zone us-central2-b --worker=all --command='git lfs install'
