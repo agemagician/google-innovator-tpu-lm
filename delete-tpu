@@ -1,0 +1,2 @@
+gcloud alpha compute tpus tpu-vm delete tpu-v4-8 --zone us-central2-b --quiet
+gcloud alpha compute tpus tpu-vm delete tpu-v3-8 --zone europe-west4-a --quiet
